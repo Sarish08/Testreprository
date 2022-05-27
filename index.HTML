@@ -1,0 +1,105 @@
+<!-- pseudo classes and elements -->
+  <!-- 1, ::first-letter
+  2, ::first-line
+  3, ::before
+  4, ::after
+  5, ::marker
+  6, ::selection -->
+    
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        background-color: rgb(129, 230, 255);
+        padding: 33px;
+        font-size: 34px;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+    }
+    nav{
+        background-color: rgb(88, 85, 85);
+        position: sticky;
+        top: 105px;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        font-size: 25px;
+        color: white;
+    }
+    nav ul li::marker{
+            color: red;
+            font-size: 38px;       
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        padding: 23px;
+    }
+    .content p{
+        border: 2px solid red;
+        padding: 20px;
+        font-size: 20px;
+        margin: 10px;
+    }
+    /* #first{
+        position: sticky;
+        top: 0;
+        color: red;
+        background-color: blanchedalmond;
+    } */
+    p::first-letter{
+        color: red;
+        font-size: 30px;
+    }
+    p::first-line{
+        color: blue;
+        background-color: yellow;
+    }
+    p::before{
+        /* content:url("Turkey.jpg"); */
+        content: " Hello. This is me. ";
+    }
+    p::after{
+        /* content: url("Turkey.jpg"); */
+    }
+    p::selection{
+        background-color: rgb(236, 10, 48);
+        color: white;  
+    }
+</style>
+<body>
+    
+    <header>Untitled Project</header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>abuot</li>
+            <li>courses</li>
+            <li>help</li>
+            <li>Contacts us</li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, rem, quam molestias at culpa fugit reiciendis nam ullam nemo odit laboriosam, laborum tempore sequi nihil quaerat veniam consectetur id hic totam iusto? Similique perspiciatis natus unde officia numquam iste mollitia magni error vitae fugiat velit, voluptatum, nobis ducimus libero culpa eum odio! Atque explicabo non a laudantium in totam architecto consequuntur, soluta earum exercitationem aliquid optio autem reiciendis voluptas consectetur blanditiis distinctio praesentium facilis culpa nihil voluptatem rerum. Enim, cum in esse et numquam labore deleniti modi ex mollitia minus possimus eum quos consequatur reprehenderit dolore exercitationem. Blanditiis reprehenderit reiciendis, sed ipsa debitis repellendus sequi nemo non optio, iste tenetur consequuntur vitae adipisci fuga? Porro eius, dignissimos aperiam dolores possimus ipsam incidunt dolorum, sapiente reprehenderit soluta temporibus ipsum maxime, placeat officia tenetur accusamus sed facere quo culpa id voluptatum! Veritatis esse molestiae aliquam minima magnam quis temporibus illum sed facere quia. Quidem culpa non libero quaerat! Excepturi dolor eveniet consequuntur placeat! Repellat eaque vitae mollitia nesciunt labore maiores ipsa asperiores ex architecto veniam assumenda, explicabo hic quod doloribus a! Omnis dolores aut natus quidem, eligendi quasi obcaecati quos saepe porro non. Nisi, fugit. Sequi, enim! Voluptate veniam at suscipit. Tenetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, rem, quam molestias at culpa fugit reiciendis nam ullam nemo odit laboriosam, laborum tempore sequi nihil quaerat veniam consectetur id hic totam iusto? Similique perspiciatis natus unde officia numquam iste mollitia magni error vitae fugiat velit, voluptatum, nobis ducimus libero culpa eum odio! Atque explicabo non a laudantium in totam architecto consequuntur, soluta earum exercitationem aliquid optio autem reiciendis voluptas consectetur blanditiis distinctio praesentium facilis culpa nihil voluptatem rerum. Enim, cum in esse et numquam labore deleniti modi ex mollitia minus possimus eum quos consequatur reprehenderit dolore exercitationem. Blanditiis reprehenderit reiciendis, sed ipsa debitis repellendus sequi nemo non optio, iste tenetur consequuntur vitae adipisci fuga? Porro eius, dignissimos aperiam dolores possimus ipsam incidunt dolorum, sapiente reprehenderit soluta temporibus ipsum maxime, placeat officia tenetur accusamus sed facere quo culpa id voluptatum! Veritatis esse molestiae aliquam minima magnam quis temporibus illum sed facere quia. Quidem culpa non libero quaerat! Excepturi dolor eveniet consequuntur placeat! Repellat eaque vitae mollitia nesciunt labore maiores ipsa asperiores ex architecto veniam assumenda, explicabo hic quod doloribus a! Omnis dolores aut natus quidem, eligendi quasi obcaecati quos saepe porro non. Nisi, fugit. Sequi, enim! Voluptate veniam at suscipit. Tenetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, rem, quam molestias at culpa fugit reiciendis nam ullam nemo odit laboriosam, laborum tempore sequi nihil quaerat veniam consectetur id hic totam iusto? Similique perspiciatis natus unde officia numquam iste mollitia magni error vitae fugiat velit, voluptatum, nobis ducimus libero culpa eum odio! Atque explicabo non a laudantium in totam architecto consequuntur, soluta earum exercitationem aliquid optio autem reiciendis voluptas consectetur blanditiis distinctio praesentium facilis culpa nihil voluptatem rerum. Enim, cum in esse et numquam labore deleniti modi ex mollitia minus possimus eum quos consequatur reprehenderit dolore exercitationem. Blanditiis reprehenderit reiciendis, sed ipsa debitis repellendus sequi nemo non optio, iste tenetur consequuntur vitae adipisci fuga? Porro eius, dignissimos aperiam dolores possimus ipsam incidunt dolorum, sapiente reprehenderit soluta temporibus ipsum maxime, placeat officia tenetur accusamus sed facere quo culpa id voluptatum! Veritatis esse molestiae aliquam minima magnam quis temporibus illum sed facere quia. Quidem culpa non libero quaerat! Excepturi dolor eveniet consequuntur placeat! Repellat eaque vitae mollitia nesciunt labore maiores ipsa asperiores ex architecto veniam assumenda, explicabo hic quod doloribus a! Omnis dolores aut natus quidem, eligendi quasi obcaecati quos saepe porro non. Nisi, fugit. Sequi, enim! Voluptate veniam at suscipit. Tenetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, rem, quam molestias at culpa fugit reiciendis nam ullam nemo odit laboriosam, laborum tempore sequi nihil quaerat veniam consectetur id hic totam iusto? Similique perspiciatis natus unde officia numquam iste mollitia magni error vitae fugiat velit, voluptatum, nobis ducimus libero culpa eum odio! Atque explicabo non a laudantium in totam architecto consequuntur, soluta earum exercitationem aliquid optio autem reiciendis voluptas consectetur blanditiis distinctio praesentium facilis culpa nihil voluptatem rerum. Enim, cum in esse et numquam labore deleniti modi ex mollitia minus possimus eum quos consequatur reprehenderit dolore exercitationem. Blanditiis reprehenderit reiciendis, sed ipsa debitis repellendus sequi nemo non optio, iste tenetur consequuntur vitae adipisci fuga? Porro eius, dignissimos aperiam dolores possimus ipsam incidunt dolorum, sapiente reprehenderit soluta temporibus ipsum maxime, placeat officia tenetur accusamus sed facere quo culpa id voluptatum! Veritatis esse molestiae aliquam minima magnam quis temporibus illum sed facere quia. Quidem culpa non libero quaerat! Excepturi dolor eveniet consequuntur placeat! Repellat eaque vitae mollitia nesciunt labore maiores ipsa asperiores ex architecto veniam assumenda, explicabo hic quod doloribus a! Omnis dolores aut natus quidem, eligendi quasi obcaecati quos saepe porro non. Nisi, fugit. Sequi, enim! Voluptate veniam at suscipit. Tenetur.</p>
+    </div>
+</body>
+</html>
